@@ -1,0 +1,135 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "Hello"
+      },
+      {
+        "intent": "goodbye",
+        "text": "Goodbye"
+      },
+      {
+        "intent": "identity",
+        "text": "Who are you?"
+      },
+      {
+        "intent": "greet",
+        "text": "Hey"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye felicia"
+      },
+      {
+        "intent": "identity",
+        "text": "what is your name"
+      },
+      {
+        "intent": "identity",
+        "text": "what are you"
+      },
+      {
+        "intent": "greet",
+        "text": "howdy"
+      },
+      {
+        "intent": "goodbye",
+        "text": "so long"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "greet",
+        "text": "howdy there"
+      },
+      {
+        "intent": "travel",
+        "entities": [
+          {
+            "start": 19,
+            "end": 26,
+            "value": " France",
+            "entity": "location"
+          }
+        ],
+        "text": "I want to travel to France"
+      },
+      {
+        "intent": "travel",
+        "entities": [
+          {
+            "start": 16,
+            "end": 21,
+            "value": "Japan",
+            "entity": "location"
+          }
+        ],
+        "text": "I want to go to Japan"
+      },
+      {
+        "intent": "travel",
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "england",
+            "entity": "location"
+          }
+        ],
+        "text": "take me to england"
+      },
+      {
+        "intent": "travel",
+        "entities": [
+          {
+            "start": 16,
+            "end": 21,
+            "value": "Texas",
+            "entity": "location"
+          }
+        ],
+        "text": "How do I get to Texas"
+      },
+      {
+        "intent": "travel",
+        "entities": [
+          {
+            "start": 13,
+            "end": 23,
+            "value": "California",
+            "entity": "location"
+          }
+        ],
+        "text": "How to go to California"
+      },
+      {
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "Ireland",
+            "entity": "location"
+          }
+        ],
+        "text": "Bring me to Ireland"
+      }
+    ],
+    "regex_features": [],
+    "entity_synonyms": []
+  }
+}

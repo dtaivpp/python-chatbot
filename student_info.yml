@@ -1,0 +1,10 @@
+slots:
+  bannerID:
+    type: text
+intents:
+  - greet
+  - goodbye
+  - getBanner
+entities:
+templates:
+actions:

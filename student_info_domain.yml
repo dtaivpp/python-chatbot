@@ -1,0 +1,27 @@
+slots:
+  bannerid:
+    type: text
+
+intents:
+  - greet
+  - goodbye
+  - give_banner
+  - ask_name
+
+entities:
+  - bannerid
+  
+templates:
+  utter_greet:
+    - 'Hello how can I help?'
+  utter_goodbye:
+    - 'Talk to you Later'
+    - 'Bye bye :('
+  utter_ask_name:
+    - 'I can get you that. \nWhat is your Banner ID?'
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_ask_name
+  - actions.ActionBanner

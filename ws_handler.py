@@ -21,7 +21,7 @@ writer = Writer(StringIO(), "json") # or "json-verbose", "msgpack"
 reader = Reader("json") # or "msgpack"
 #val = reader.read(io)
 
-url = "ws://localhost:3449/chat?name=ChAI&room=Test"
+url = "ws://emscript.regent.edu:3449/chat?name=ChAI&room=Hello"
 
 def on_message(ws, message):
     print(reader.read(StringIO(message)))
@@ -32,16 +32,18 @@ def on_error(ws, error):
 def on_close(ws):
     print("### closed ###")
 
+def send_message(ws, message):
+  ws.send("[\"~:post-message\",\"" + message + "\"]")
 
 def on_open(ws):
  #writer.write()
  #sender_data = io.getvalue()
-  ws.send("[\"~:post-message\",\"YOYOYOYOYO\"]")
+  send_message(ws, "Hello world, I am Pickle Rick!")
+  time.sleep(1)
+  ws.close()
     #def run(*args):
         #for i in range(3):
          #   time.sleep(1)
-        #time.sleep(1)
-        #ws.close()
         #print("thread terminating...")
     #thread.start_new_thread(run, ())
 

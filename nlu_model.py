@@ -8,7 +8,7 @@ def train_nlu(data, nlu_config, directory):
 
 def run_nlu ():
   interpreter = Interpreter.load('./models/nlu/default/nlu')
-  print(interpreter.parse(u"Can you take me to Regent"))
+  print(interpreter.parse(u"Id B04010203"))
 
 if __name__ == '__main__':
   #train_nlu('./data/data.json', 'config_spacy.json', './models/nlu')

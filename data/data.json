@@ -12,11 +12,6 @@
         "entities": []
       },
       {
-        "text": "Who are you?",
-        "intent": "identity",
-        "entities": []
-      },
-      {
         "text": "Hey",
         "intent": "greet",
         "entities": []
@@ -70,78 +65,6 @@
         "text": "howdy there",
         "intent": "greet",
         "entities": []
-      },
-      {
-        "text": "I want to travel to France",
-        "intent": "travel",
-        "entities": [
-          {
-            "start": 19,
-            "end": 26,
-            "value": " France",
-            "entity": "location"
-          }
-        ]
-      },
-      {
-        "text": "I want to go to Japan",
-        "intent": "travel",
-        "entities": [
-          {
-            "start": 16,
-            "end": 21,
-            "value": "Japan",
-            "entity": "location"
-          }
-        ]
-      },
-      {
-        "text": "take me to england",
-        "intent": "travel",
-        "entities": [
-          {
-            "start": 11,
-            "end": 18,
-            "value": "england",
-            "entity": "location"
-          }
-        ]
-      },
-      {
-        "text": "How do I get to Texas",
-        "intent": "travel",
-        "entities": [
-          {
-            "start": 16,
-            "end": 21,
-            "value": "Texas",
-            "entity": "location"
-          }
-        ]
-      },
-      {
-        "text": "How to go to California",
-        "intent": "travel",
-        "entities": [
-          {
-            "start": 13,
-            "end": 23,
-            "value": "California",
-            "entity": "location"
-          }
-        ]
-      },
-      {
-        "text": "Bring me to Ireland",
-        "intent": "travel",
-        "entities": [
-          {
-            "start": 12,
-            "end": 19,
-            "value": "Ireland",
-            "entity": "location"
-          }
-        ]
       },
       {
         "text": "Here is my banner ID B01234567",
@@ -262,6 +185,31 @@
             "entity": "Banner ID"
           }
         ]
+      },
+      {
+        "text": "What is my name",
+        "intent": "ask_name",
+        "entities": []
+      },
+      {
+        "text": "Who am I",
+        "intent": "ask_name",
+        "entities": []
+      },
+      {
+        "text": "What's my name",
+        "intent": "ask_name",
+        "entities": []
+      },
+      {
+        "text": "whats my name",
+        "intent": "ask_name",
+        "entities": []
+      },
+      {
+        "text": "do you know my name",
+        "intent": "ask_name",
+        "entities": []
       }
     ]
   }

@@ -1,0 +1,33 @@
+action_factory: null
+action_names:
+- utter_greet
+- utter_goodbye
+- utter_ask_name
+- action_get_name
+actions:
+- utter_greet
+- utter_goodbye
+- utter_ask_name
+- actions.ActionBanner
+config:
+  store_entities_as_slots: true
+entities:
+- bannerid
+intents:
+- greet
+- goodbye
+- give_banner
+- ask_name
+slots:
+  bannerid:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_ask_name:
+  - text: I can get you that. \nWhat is your Banner ID?
+  utter_goodbye:
+  - text: Talk to you Later
+  - text: Bye bye :(
+  utter_greet:
+  - text: Hello how can I help?
+topics: []

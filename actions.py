@@ -13,7 +13,7 @@ class ActionBanner(Action):
     bannerid = tracker.get_slot('bannerid')
     name = "David"  #Name returned by the API
 
-    response = """Hello {} your ID is {}. """.format(name, bannerid)
+    response = """Your name is {} and your ID is {}. """.format(name, bannerid)
     
     dispatcher.utter_message(response)
-    return[SlotSet('bannerid'), bannerid]
+    return[SlotSet('name', name if name is not None else '')]

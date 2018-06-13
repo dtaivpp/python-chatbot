@@ -3,6 +3,7 @@ from transit.writer import Writer
 from transit.reader import Reader
 import websocket
 from dialogue_management_model import run_student_bot
+import pprint
 
 try:
     from StringIO import StringIO
@@ -22,12 +23,24 @@ writer = Writer(StringIO(), "json") # or "json-verbose", "msgpack"
 reader = Reader("json") # or "msgpack"
 #val = reader.read(io)
 
-url = "ws://emscript.regent.edu:3449/chat?name=ChAI&room=Hello"
+agent = run_student_bot()
 
+url = "ws://emscript.regent.edu:3449/chat?name=ChAI&room=Chai"
 def on_message(ws, message):
-  data = reader.read(StringIO(message))
   
-  print(type(data))
+  pp = pprint.PrettyPrinter(indent=4)
+  data = reader.read(StringIO(message))
+
+  if(data[0].str == 'new-messages'):
+
+    user = list(data[1][0].values())[2]
+    message = list(data[1][0].values())[3]
+
+    if(list(data[1][0].values())[2] != 'SYSTEM' and list(data[1][0].values())[2] != 'ChAI'):
+      print(list(data[1][0].values())[3])
+      reply = agent.handle_message(text_message = message, sender_id= user)
+      send_message(ws, reply[0]['text'])
+      # ws.close()
 
 """   if (data['new-messages']['chat-message/author'] != 'ChAI'):
     send_message('You arent me!') """
@@ -62,5 +75,6 @@ if __name__ == "__main__":
                               on_close = on_close)
     ws.on_open = on_open
     ws.run_forever()
+
 
 

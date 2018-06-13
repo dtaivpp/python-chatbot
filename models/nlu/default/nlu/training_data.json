@@ -192,6 +192,70 @@
       {
         "intent": "ask_name",
         "text": "do you know my name"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello Chai"
+      },
+      {
+        "intent": "greet",
+        "text": "Hi there chatbot"
+      },
+      {
+        "intent": "greet",
+        "text": "Sup chai"
+      },
+      {
+        "intent": "greet",
+        "text": "Good morning Chai"
+      },
+      {
+        "intent": "greet",
+        "text": "goodmoring chatbot"
+      },
+      {
+        "intent": "greet",
+        "text": "Good afternoon chai"
+      },
+      {
+        "intent": "greet",
+        "text": "goodafternoon chatbot"
+      },
+      {
+        "intent": "greet",
+        "text": "Good evening"
+      },
+      {
+        "intent": "greet",
+        "text": "evening chatbot"
+      },
+      {
+        "intent": "greet",
+        "text": "morning chatbot"
+      },
+      {
+        "intent": "goodbye",
+        "text": "So long chatbot"
+      },
+      {
+        "intent": "goodbye",
+        "text": "ttyl"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you later"
+      },
+      {
+        "intent": "greet",
+        "text": "Afternoon"
+      },
+      {
+        "intent": "ask_name",
+        "text": "do you know what my name is?"
+      },
+      {
+        "intent": "ask_name",
+        "text": "do you even know who I am"
       }
     ],
     "regex_features": [],

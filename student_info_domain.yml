@@ -1,6 +1,8 @@
 slots:
   bannerid:
     type: text
+  name:
+    type: text
 
 intents:
   - greet
@@ -14,11 +16,13 @@ entities:
 templates:
   utter_greet:
     - 'Hello how can I help?'
+    - 'Hey there, how can I be of assistance'
   utter_goodbye:
     - 'Talk to you Later'
     - 'Bye bye :('
   utter_ask_name:
-    - 'I can get you that. \nWhat is your Banner ID?'
+    - 'I can get your name. What is your Banner ID?'
+    - 'I can tell you your name if you give me your Banner ID'
 
 actions:
   - utter_greet

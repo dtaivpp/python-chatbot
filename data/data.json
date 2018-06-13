@@ -210,6 +210,86 @@
         "text": "do you know my name",
         "intent": "ask_name",
         "entities": []
+      },
+      {
+        "text": "Hello Chai",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Hi there chatbot",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Sup chai",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Good morning Chai",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "goodmoring chatbot",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Good afternoon chai",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "goodafternoon chatbot",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Good evening",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "evening chatbot",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "morning chatbot",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "So long chatbot",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "ttyl",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "see you later",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Afternoon",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "do you know what my name is?",
+        "intent": "ask_name",
+        "entities": []
+      },
+      {
+        "text": "do you even know who I am",
+        "intent": "ask_name",
+        "entities": []
       }
     ]
   }

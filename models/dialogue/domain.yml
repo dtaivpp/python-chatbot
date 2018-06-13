@@ -22,12 +22,17 @@ slots:
   bannerid:
     initial_value: null
     type: rasa_core.slots.TextSlot
+  name:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
 templates:
   utter_ask_name:
-  - text: I can get you that. \nWhat is your Banner ID?
+  - text: I can get your name. What is your Banner ID?
+  - text: I can tell you your name if you give me your Banner ID
   utter_goodbye:
   - text: Talk to you Later
   - text: Bye bye :(
   utter_greet:
   - text: Hello how can I help?
+  - text: Hey there, how can I be of assistance
 topics: []

@@ -6,6 +6,7 @@
     "intent_ask_name",
     "entity_bannerid",
     "slot_bannerid_0",
+    "slot_name_0",
     "prev_action_listen",
     "prev_action_restart",
     "prev_utter_greet",

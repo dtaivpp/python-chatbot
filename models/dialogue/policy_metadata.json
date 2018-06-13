@@ -10,13 +10,13 @@
         "name"
       ]
     },
+    "utter_goodbye": {
+      "slots": []
+    },
     "utter_ask_name": {
       "slots": []
     },
     "utter_greet": {
-      "slots": []
-    },
-    "utter_goodbye": {
       "slots": []
     }
   },

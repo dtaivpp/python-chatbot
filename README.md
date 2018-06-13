@@ -9,9 +9,8 @@
 - Connct to CRM
   - Ntlm
 - Get Data from CRM
-  - Name Based off Banner ID
+  - Name Based off Banner ID (in acitons.py)
 
 ### Tippett
 - Connect ws to dynamic chatbot
-- Train on banner ID format
 - Regex Formatting

@@ -44,12 +44,20 @@
 * ask_name
     - utter_ask_name
 
-## Generated Story 9082038409720394
+## Generated Story 9082038409720394457
 * give_banner{"bannerid": "b00123445"}
     - slot{"bannerid": "b00123445"}
     - action_get_name
     - slot{"name": "David"}
 
-## Generated Story 304340583453453222
+## Generated Story 3453459353453000349
+* greet
+  - utter_greet
+* ask_name
+  - utter_ask_name
+* give_banner{"bannerid": "b00123445"}
+  - slot{"bannerid": "b00123445"}
+  - action_get_name
+  - slot{"name": "David"}
 * goodbye
-    - export
+    - utter_goodbye

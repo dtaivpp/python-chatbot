@@ -326,6 +326,121 @@
             "entity": "bannerid"
           }
         ]
+      },
+      {
+        "text": "yes",
+        "intent": "true_",
+        "entities": []
+      },
+      {
+        "text": "yup",
+        "intent": "true_",
+        "entities": []
+      },
+      {
+        "text": "sure",
+        "intent": "true_",
+        "entities": []
+      },
+      {
+        "text": "yuppers",
+        "intent": "true_",
+        "entities": []
+      },
+      {
+        "text": "yessir",
+        "intent": "true_",
+        "entities": []
+      },
+      {
+        "text": "yeah ",
+        "intent": "true_",
+        "entities": []
+      },
+      {
+        "text": "yea",
+        "intent": "true_",
+        "entities": []
+      },
+      {
+        "text": "I do",
+        "intent": "true_",
+        "entities": []
+      },
+      {
+        "text": "no",
+        "intent": "false_",
+        "entities": []
+      },
+      {
+        "text": "nope",
+        "intent": "false_",
+        "entities": []
+      },
+      {
+        "text": "no way",
+        "intent": "false_",
+        "entities": []
+      },
+      {
+        "text": "nein",
+        "intent": "false_",
+        "entities": []
+      },
+      {
+        "text": "iie",
+        "intent": "false_",
+        "entities": []
+      },
+      {
+        "text": "no thank you",
+        "intent": "false_",
+        "entities": []
+      },
+      {
+        "text": "yes please",
+        "intent": "true_",
+        "entities": []
+      },
+      {
+        "text": "From the system please",
+        "intent": "system_name",
+        "entities": []
+      },
+      {
+        "text": "from the system",
+        "intent": "system_name",
+        "entities": []
+      },
+      {
+        "text": "system",
+        "intent": "system_name",
+        "entities": []
+      },
+      {
+        "text": "system name",
+        "intent": "system_name",
+        "entities": []
+      },
+      {
+        "text": "from the chat",
+        "intent": "chat_name",
+        "entities": []
+      },
+      {
+        "text": "chat name",
+        "intent": "chat_name",
+        "entities": []
+      },
+      {
+        "text": "chat",
+        "intent": "chat_name",
+        "entities": []
+      },
+      {
+        "text": "my chat name please",
+        "intent": "chat_name",
+        "entities": []
       }
     ]
   }

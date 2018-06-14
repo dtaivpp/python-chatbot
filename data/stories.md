@@ -8,57 +8,38 @@
 
 ## story 03
 * give_banner{"bannerid": "B00021212"}
-  - action_get_name
+  - slot{"bannerid": "Q98237612"}
 
-## story 04
+## story Ask About Name
 * ask_name
-  - utter_ask_name
+  - clarify_name
+  > clarify name
 
-## Generated Story 3265687573420130869
-* give_banner{"bannerid": "b00011123"}
-    - slot{"bannerid": "b00011123"}
-    - action_get_name
-    - slot{"name": "David"}
-
-## Generated Story 5368356442724562456
-* greet
-  - utter_greet
-
-## Generated Story 0827384702934928903
-* greet
-  - utter_greet
-
-## Generated Story 3487084590569794859
-* greet
-  - utter_greet
-
-## Generated Story 0439002394508834598
-* goodbye
-    - utter_goodbye
-
-## Generated Story 9203409998843958304
-* greet
-  - utter_greet
-
-## Generated Story 0283940239488029387
-* ask_name
-    - utter_ask_name
-
-## Generated Story 9082038409720394457
+## story Clarify Name System
+> clarify name
+* system_name
+  - utter_ask_bannerid
 * give_banner{"bannerid": "b00123445"}
     - slot{"bannerid": "b00123445"}
     - action_get_name
     - slot{"name": "David"}
 
-## Generated Story 3453459353453000349
-* greet
-  - utter_greet
-* ask_name
-  - utter_ask_name
-* give_banner{"bannerid": "b00123445"}
-  - slot{"bannerid": "b00123445"}
+## story Clarify Name Banner ID Exists
+> clarify name
+* system_name
   - action_get_name
-  - slot{"name": "David"}
-* goodbye
-    - utter_goodbye
 
+## story Clarify Name If system Name exisits
+> clarify name
+* system_name
+  - utter_system_name
+
+## story Clarify Name If chat Name does not exist
+> clarify name
+* chat_name
+  - action_chat_name
+
+## story Clarify Name If chat Name exisits
+> clarify name
+* chat_name
+  - utter_chat_name

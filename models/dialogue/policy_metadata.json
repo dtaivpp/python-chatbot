@@ -5,15 +5,15 @@
         "bannerid"
       ]
     },
+    "utter_greet": {
+      "slots": []
+    },
     "action_get_name": {
       "slots": [
         "name"
       ]
     },
     "utter_goodbye": {
-      "slots": []
-    },
-    "utter_greet": {
       "slots": []
     },
     "utter_ask_name": {

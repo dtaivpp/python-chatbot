@@ -17,3 +17,17 @@ class ActionBanner(Action):
     
     dispatcher.utter_message(response)
     return[SlotSet('name', name if name is not None else '')]
+
+class ActionChatName(Action):
+  def name(self):
+    return 'action_chat_name'
+  
+  def run (self, dispatcher, tracker, domain):
+    # Insert API call here
+    bannerid = tracker.get_slot('bannerid')
+    name = "David"  #Name returned by the API
+
+    response = """Your name is {} and your ID is {}. """.format(name, bannerid)
+    
+    dispatcher.utter_message(response)
+    return[SlotSet('name', name if name is not None else '')]

@@ -2,37 +2,60 @@ action_factory: null
 action_names:
 - utter_greet
 - utter_goodbye
-- utter_ask_name
+- utter_ask_bannerid
+- utter_clarify_name
+- utter_system_name
+- utter_chat_name
 - action_get_name
+- action_chat_name
 actions:
 - utter_greet
 - utter_goodbye
-- utter_ask_name
+- utter_ask_bannerid
+- utter_clarify_name
+- utter_system_name
+- utter_chat_name
 - actions.ActionBanner
+- actions.ActionChatName
 config:
   store_entities_as_slots: true
 entities:
 - bannerid
+- system_name
+- chat_name
 intents:
 - greet
 - goodbye
 - give_banner
+- true_
+- false_
 - ask_name
+- chat_name
+- system-name
 slots:
   bannerid:
     initial_value: null
     type: rasa_core.slots.TextSlot
-  name:
+  chat_name:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  system_name:
     initial_value: null
     type: rasa_core.slots.TextSlot
 templates:
-  utter_ask_name:
+  utter_ask_bannerid:
   - text: I can get your name. What is your Banner ID?
   - text: I can tell you your name if you give me your Banner ID
+  utter_chat_name:
+  - text: Your Chat name is {chat_name}
+  utter_clarify_name:
+  - text: Would you like your name from our systems or the chat?
   utter_goodbye:
   - text: Talk to you Later
   - text: Bye bye :(
   utter_greet:
   - text: Hello how can I help?
   - text: Hey there, how can I be of assistance
+  utter_system_name:
+  - text: Your System name is {system_name}
 topics: []

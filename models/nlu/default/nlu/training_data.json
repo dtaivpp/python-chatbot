@@ -292,6 +292,110 @@
           }
         ],
         "text": "Sure my ID is B29382572"
+      },
+      {
+        "intent": "true_",
+        "text": "yes"
+      },
+      {
+        "intent": "true_",
+        "text": "yup"
+      },
+      {
+        "intent": "true_",
+        "text": "sure"
+      },
+      {
+        "intent": "true_",
+        "text": "yuppers"
+      },
+      {
+        "intent": "true_",
+        "text": "yessir"
+      },
+      {
+        "intent": "true_",
+        "text": "yeah "
+      },
+      {
+        "intent": "true_",
+        "text": "yea"
+      },
+      {
+        "intent": "true_",
+        "text": "I do"
+      },
+      {
+        "intent": "false_",
+        "text": "no"
+      },
+      {
+        "intent": "false_",
+        "text": "nope"
+      },
+      {
+        "intent": "false_",
+        "text": "no way"
+      },
+      {
+        "intent": "false_",
+        "text": "nein"
+      },
+      {
+        "intent": "false_",
+        "text": "iie"
+      },
+      {
+        "intent": "false_",
+        "text": "no thank you"
+      },
+      {
+        "intent": "true_",
+        "text": "yes please"
+      },
+      {
+        "intent": "system_name",
+        "text": "From the system please"
+      },
+      {
+        "intent": "system_name",
+        "text": "from the system"
+      },
+      {
+        "intent": "system_name",
+        "text": "system"
+      },
+      {
+        "intent": "system_name",
+        "text": "system name"
+      },
+      {
+        "intent": "chat_name",
+        "text": "from the chat"
+      },
+      {
+        "intent": "chat_name",
+        "text": "chat name"
+      },
+      {
+        "intent": "chat_name",
+        "text": "chat"
+      },
+      {
+        "intent": "chat_name",
+        "text": "my chat name please"
+      },
+      {
+        "intent": "give_banner",
+        "entities": [
+          {
+            "start": 4,
+            "end": 13,
+            "value": "B44567923",
+            "entity": "bannerid"
+          }
+        ],
+        "text": "Its B44567923"
       }
     ],
     "regex_features": [],

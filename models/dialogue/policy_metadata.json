@@ -10,13 +10,21 @@
     },
     "action_get_name": {
       "slots": [
-        "name"
+        "system_name"
       ]
     },
-    "utter_goodbye": {
+    "utter_system_name": {
       "slots": []
     },
-    "utter_ask_name": {
+    "action_chat_name": {
+      "slots": [
+        "chat_name"
+      ]
+    },
+    "utter_chat_name": {
+      "slots": []
+    },
+    "utter_goodbye": {
       "slots": []
     }
   },

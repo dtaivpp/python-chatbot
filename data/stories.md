@@ -12,7 +12,7 @@
 
 ## story Ask About Name
 * ask_name
-  - clarify_name
+  - utter_clarify_name
   > clarify name
 
 ## story Clarify Name System

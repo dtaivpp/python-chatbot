@@ -16,7 +16,7 @@ class ActionBanner(Action):
     response = """Your name is {} and your ID is {}. """.format(name, bannerid)
     
     dispatcher.utter_message(response)
-    return[SlotSet('name', name if name is not None else '')]
+    return[SlotSet('system_name', name if name is not None else '')]
 
 class ActionChatName(Action):
   def name(self):
@@ -24,10 +24,11 @@ class ActionChatName(Action):
   
   def run (self, dispatcher, tracker, domain):
     # Insert API call here
-    bannerid = tracker.get_slot('bannerid')
-    name = "David"  #Name returned by the API
+    #name = tracker.get_slot('chat_name')
+    name = "Jeff"
+    #Name returned by the API
+    print(dispatcher)
+    response = """Your chat name is {}""".format(name)
 
-    response = """Your name is {} and your ID is {}. """.format(name, bannerid)
-    
     dispatcher.utter_message(response)
-    return[SlotSet('name', name if name is not None else '')]
+    return[SlotSet('chat_name', name if name is not None else '')]

@@ -441,6 +441,18 @@
         "text": "my chat name please",
         "intent": "chat_name",
         "entities": []
+      },
+      {
+        "text": "Its B44567923",
+        "intent": "give_banner",
+        "entities": [
+          {
+            "start": 4,
+            "end": 13,
+            "value": "B44567923",
+            "entity": "bannerid"
+          }
+        ]
       }
     ]
   }

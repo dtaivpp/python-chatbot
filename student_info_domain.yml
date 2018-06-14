@@ -18,6 +18,8 @@ intents:
 
 entities:
   - bannerid
+  - system_name
+  - chat_name
   
 templates:
   utter_greet:

@@ -33,7 +33,7 @@ def run_student_online(input_channel, interpreter,
   agent.train_online(training_data,
                       input_channel=input_channel,
                       batch_size=50,
-                      epochs=200,
+                      epochs=400,
                       max_training_samples=300)
 
   return agent

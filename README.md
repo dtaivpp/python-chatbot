@@ -1,16 +1,5 @@
 # Chatbot Demo
 
-## Updates
-- Webchat handler is working and connecting properly
-- Simple Training Data Created
 
-## TODO
-### Hines
-- Connct to CRM
-  - Ntlm
-- Get Data from CRM
-  - Name Based off Banner ID (in acitons.py)
-
-### Tippett
-- Connect ws to dynamic chatbot
-- Regex Formatting
+###What the Chatbot is
+  This is a chatbot built with the Rasa stack. It uses the Rasa NLU unit along with the Rasa Core to first interperete what is being asked of it and then to decide on the best action based on that. 

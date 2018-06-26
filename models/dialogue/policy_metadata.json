@@ -5,6 +5,9 @@
         "bannerid"
       ]
     },
+    "utter_goodbye": {
+      "slots": []
+    },
     "action_get_name": {
       "slots": [
         "system_name"

@@ -5,9 +5,6 @@
         "bannerid"
       ]
     },
-    "utter_greet": {
-      "slots": []
-    },
     "action_get_name": {
       "slots": [
         "system_name"
@@ -22,6 +19,9 @@
       ]
     },
     "utter_chat_name": {
+      "slots": []
+    },
+    "utter_greet": {
       "slots": []
     },
     "utter_goodbye": {

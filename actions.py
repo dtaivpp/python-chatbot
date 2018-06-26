@@ -3,24 +3,36 @@ from __future__ import division
 from __future__ import unicode_literals
 from rasa_core.actions.action import Action
 from rasa_core.events import SlotSet
-from requests_ntlm import HttpNtlmAuth
+# from requests_ntlm import HttpNtlmAuth
 import requests
 import json
 
-
-
-
+# This is a custom action for the Chatbot
+# It accepts an action from RASA.Core
 class ActionBanner(Action):
   def name(self):
+    # Here is where the name of the action is returned
+    # to student_info_domain.yml for use in 
+    # dialogue trainer
     return 'action_get_name'
   
   def run (self, dispatcher, tracker, domain):
+    # Pulls name from the banner ID slot created in
+    # student_info_domain.yml
     bannerid = tracker.get_slot('bannerid')
-    name = Get_Name(bannerid)  #Name returned by the API
-
-    response = """Your name is {} and your ID is {}. """.format(name, bannerid)
     
+    # Example of how an api call can be used to get a name
+    name = Get_Name(bannerid)
+
+    # This is the response that is sent back to the 
+    # user with this action
+    response = """Your name is {}""".format(name)
+    
+    # This tells the agent to send the user back the response
     dispatcher.utter_message(response)
+
+    # Here we are telling the system that the data we just
+    # got from the api should fill the system_name
     return[SlotSet('system_name', name if name is not None else '')]
 
 class ActionChatName(Action):
@@ -28,22 +40,36 @@ class ActionChatName(Action):
     return 'action_chat_name'
   
   def run (self, dispatcher, tracker, domain):
-    # Insert API call here
-    #name = tracker.get_slot('chat_name')
+    # When you call the Agent with a sender ID you can
+    # access that here with the dispatcher object
     name = dispatcher['sender_id']
-    #Name returned by the API
-    print(dispatcher)
+    
+    # Creates the response message
     response = """Your chat name is {}""".format(name)
 
+    # This tells the agent to send the user back the response
     dispatcher.utter_message(response)
+
+    # Here we are telling the system that the data we just
+    # got from sender id should fill the chat_name slot
     return[SlotSet('chat_name', name if name is not None else '')]
 
 def Get_Name(erpid):
-  session = requests.Session()
-  session.auth = HttpNtlmAuth('REGENTNT\\dtippett', 'qwER1234')
-  url = "https://recruitercrm.regent.edu/CRMRECRUIT/api/data/v8.0/contacts?$filter=datatel_erpid%20eq%20%27{}%27".format(erpid)
+  # API Stump
+  # You can create custom api functions like here to 
+  # get data for the users
+  return "Jeff" 
 
-  response = session.get(url)
+""" class Action_RegexCheck(Acton):
+  def name(self):
+    return 'action_regex_check'
+  
+  def run (self, dispatcher, tracker, domain):
+    text_to_check = tracker.get_slot('input')
+    
+    if(regex.match(text_to_check)):
+      dispatcher.utter_message("It matched!")
+      return [SlotSet('input', text_to_check if text_to_check is not None else '')]
 
-  parsed = json.loads(response.text)
-  return parsed['value'][0]['firstname']
+    dispatcher.utter_message("That is not a valid input.")
+    return[SlotSet('input', '')] """

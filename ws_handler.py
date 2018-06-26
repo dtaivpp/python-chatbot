@@ -25,7 +25,7 @@ reader = Reader("json") # or "msgpack"
 
 agent = run_student_bot()
 
-url = "ws://emscript.regent.edu:3449/chat?name=ChAI&room=Chai"
+url = "ws://emscript.regent.edu:3449/chat?name=ChAI&room=ChatTest"
 def on_message(ws, message):
   
   pp = pprint.PrettyPrinter(indent=4)

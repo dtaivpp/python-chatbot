@@ -16,20 +16,27 @@ from rasa_core.interpreter import RasaNLUInterpreter
 
 logger = logging.getLogger(__name__)
 
+# This is used to train the RASA core on your dialogue model
+# and branching statements. It is a CLI trainer
 def run_student_online(input_channel, interpreter,
                           domain_file="student_info_domain.yml",
                           training_data_file='data/stories.md'):
 
-  #Featureizer Generation
+  # Featureizer Generation
   featurizer = MaxHistoryTrackerFeaturizer(BinarySingleStateFeaturizer(), max_history=5)
   
+  # Not really sure what is happening here
   agent = Agent(domain_file,
                 policies=[MemoizationPolicy(max_history=5),
                           KerasPolicy(featurizer)],
                           interpreter=interpreter)
 
+  # This is where our training data file is loaded in for training
   training_data = agent.load_data(training_data_file)
   
+  # Training data is the training data object created in the above line
+  # 
+  # Epochs are the number of runs the bot does
   agent.train_online(training_data,
                       input_channel=input_channel,
                       batch_size=50,

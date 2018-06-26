@@ -16,6 +16,7 @@ from rasa_core.interpreter import RasaNLUInterpreter
 
 logger = logging.getLogger(__name__)
 
+# Training the dialogue model
 def train_dialogue(domain_file = 'student_info_domain.yml',
                    model_path = './models/dialogue',
                    training_data_file = './data/stories.md'):
@@ -26,22 +27,29 @@ def train_dialogue(domain_file = 'student_info_domain.yml',
                 policies=[MemoizationPolicy(max_history=5),
                           KerasPolicy(featurizer)])
   
-
+  # Loading the training data
   training_data = agent.load_data(training_data_file)
   agent.train_online(training_data,
                     batch_size=60,
                     epochs=500,
                     validation_split = 0.2,
                     augmentation_factor = 50)
+  
+  # Saves the trained agent for later use
   agent.persist(model_path)
+
+  # Returns the agent to the caller
   return agent
 
+# Starts the bot for interacting with people
 def run_student_bot(serve_forever=True):
   interpreter = RasaNLUInterpreter('./models/nlu/default/nlu')
+  # Loads the previously trained dialogue model
   agent = Agent.load('./models/dialogue', interpreter = interpreter)
 
   if serve_forever:
     return agent
+
 
 if __name__ == '__main__':
   train_dialogue()

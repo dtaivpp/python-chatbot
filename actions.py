@@ -17,3 +17,4 @@ class ActionBanner(Action):
     
     dispatcher.utter_message(response)
     return[SlotSet('name', name if name is not None else '')]
+

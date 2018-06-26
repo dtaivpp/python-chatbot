@@ -9,8 +9,10 @@ from rasa_core.policies.keras_policy import KerasPolicy
 from rasa_core.policies.memoization import MemoizationPolicy
 from rasa_core.featurizers import (MaxHistoryTrackerFeaturizer,
                                    BinarySingleStateFeaturizer)
+from datetime import datetime
 
 if __name__ == '__main__':
+  start = datetime.now()
   logging.basicConfig(level='INFO')
 
   #File for dialog management
@@ -37,6 +39,8 @@ if __name__ == '__main__':
     epochs = 500,
     batch_size = 10,
     validation_split = 0.2)
-	
+  end = datetime.now()
+  final = end - start
+  print(final)
   # Save Model
   agent.persist(model_path)

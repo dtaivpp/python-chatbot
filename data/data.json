@@ -453,6 +453,16 @@
             "entity": "bannerid"
           }
         ]
+      },
+      {
+        "text": "system name again",
+        "intent": "system_name",
+        "entities": []
+      },
+      {
+        "text": "yo",
+        "intent": "greet",
+        "entities": []
       }
     ]
   }

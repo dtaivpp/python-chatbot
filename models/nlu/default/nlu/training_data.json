@@ -396,6 +396,14 @@
           }
         ],
         "text": "Its B44567923"
+      },
+      {
+        "intent": "system_name",
+        "text": "system name again"
+      },
+      {
+        "intent": "greet",
+        "text": "yo"
       }
     ],
     "regex_features": [],

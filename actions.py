@@ -42,7 +42,10 @@ class ActionChatName(Action):
   def run (self, dispatcher, tracker, domain):
     # When you call the Agent with a sender ID you can
     # access that here with the dispatcher object
-    name = dispatcher['sender_id']
+    if not dispatcher['sender_id']:
+      name = "Steve" 
+    else:
+      name = dispatcher['sender_id']
     
     # Creates the response message
     response = """Your chat name is {}""".format(name)

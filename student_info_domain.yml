@@ -27,16 +27,20 @@ templates:
     - 'Hey there, how can I be of assistance'
   utter_goodbye:
     - 'Talk to you Later'
+    - 'So long'
     - 'Bye bye :('
   utter_clarify_name:
     - 'Would you like your name from our systems or the chat?'
   utter_ask_bannerid:
     - 'I can get your name. What is your Banner ID?'
     - 'I can tell you your name if you give me your Banner ID'
+    - 'Sure what is your Banner ID'
   utter_chat_name:
     - 'Your Chat name is {chat_name}'
+    - 'Your name in the chat is {chat_name}'
   utter_system_name:
     - 'Your System name is {system_name}'
+    - 'Your name in our system is {system_name}'
 
 actions:
   - utter_greet

@@ -1,6 +1,6 @@
 # Rasa Chatbot Demo
 
-## Introduction
+# Introduction
 After searching around on the internet we could not find anything beyond the most basic of examples of a chatbot so we have set out to create our own. This demo is being written from the usecase of a Christian University that is trying to engage with students providing useful information 24/7.
 
 ## Installation
@@ -19,6 +19,9 @@ While this demo is being written from the perspective of developing on Windows 1
       `python -m pip install pip 9.0.3`  
 7. Then run the following command to get the simple intent creation page  
     `npm install rasa-nlu-trainer`  
-That is it (as far as installation is concerned that is).
+
+That is it (as far as installation is concerned that is). Continue on to see how we will use thse
 
 ## Training the Rasa NLU
+The first thing to do when going to train the NLU is to load up some data into data/data.json. The quickest way to do this is using the rasa nlu trainer we insalled in step 7 of the last section. You do this by running the following line from the command line.  
+    `rasa-nlu-trainer`  

@@ -3,6 +3,7 @@ from rasa_nlu import config
 from rasa_nlu.model import Trainer
 from rasa_nlu.model import Metadata, Interpreter
 
+# This is used to train the rasa nlu
 def train_nlu(data, nlu_config, directory):
   training_data = load_data(data)
   trainer = Trainer(config.load(nlu_config))

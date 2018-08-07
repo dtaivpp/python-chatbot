@@ -7,26 +7,12 @@
         "system_name"
       ]
     },
-<<<<<<< HEAD
     "action_chat_name": {
-=======
-    "utter_system_name": {
-      "slots": []
-    },
-    "action_get_name": {
->>>>>>> develop
       "slots": [
         "chat_name"
       ]
     },
-<<<<<<< HEAD
     "utter_chat_name": {
-=======
-    "utter_greet": {
-      "slots": []
-    },
-    "utter_goodbye": {
->>>>>>> develop
       "slots": []
     },
     "action_get_name": {
@@ -36,15 +22,12 @@
     },
     "utter_system_name": {
       "slots": []
-<<<<<<< HEAD
     },
     "utter_goodbye": {
       "slots": []
     },
     "utter_greet": {
       "slots": []
-=======
->>>>>>> develop
     }
   },
   "rasa_core": "0.9.4",

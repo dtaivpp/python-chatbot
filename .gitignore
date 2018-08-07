@@ -1,2 +1,3 @@
-models\*
+models\dialogue\*
+models\nlu\default\*
 slack_creds.json

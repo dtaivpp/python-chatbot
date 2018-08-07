@@ -35,6 +35,7 @@ coloredlogs==7.3
 ruamel.yaml==0.15.34
 flask==0.12
 rasa_nlu==0.11.4
+rasa_core==0.9.4
 
 ###additional
 pypandoc

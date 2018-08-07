@@ -2,72 +2,58 @@
   "rasa_nlu_data": {
     "common_examples": [
       {
-        "text": "Hello",
         "intent": "greet",
-        "entities": []
+        "text": "Hello"
       },
       {
-        "text": "Goodbye",
         "intent": "goodbye",
-        "entities": []
+        "text": "Goodbye"
       },
       {
-        "text": "Hey",
         "intent": "greet",
-        "entities": []
+        "text": "Hey"
       },
       {
-        "text": "Hi",
         "intent": "greet",
-        "entities": []
+        "text": "Hi"
       },
       {
-        "text": "goodbye",
         "intent": "goodbye",
-        "entities": []
+        "text": "goodbye"
       },
       {
-        "text": "bye",
         "intent": "goodbye",
-        "entities": []
+        "text": "bye"
       },
       {
-        "text": "bye felicia",
         "intent": "goodbye",
-        "entities": []
+        "text": "bye felicia"
       },
       {
-        "text": "what is your name",
         "intent": "identity",
-        "entities": []
+        "text": "what is your name"
       },
       {
-        "text": "what are you",
         "intent": "identity",
-        "entities": []
+        "text": "what are you"
       },
       {
-        "text": "howdy",
         "intent": "greet",
-        "entities": []
+        "text": "howdy"
       },
       {
-        "text": "so long",
         "intent": "goodbye",
-        "entities": []
+        "text": "so long"
       },
       {
-        "text": "hey there",
         "intent": "greet",
-        "entities": []
+        "text": "hey there"
       },
       {
-        "text": "howdy there",
         "intent": "greet",
-        "entities": []
+        "text": "howdy there"
       },
       {
-        "text": "Here is my banner ID B01234567",
         "intent": "give_banner",
         "entities": [
           {
@@ -76,10 +62,10 @@
             "value": "B01234567",
             "entity": "bannerid"
           }
-        ]
+        ],
+        "text": "Here is my banner ID B01234567"
       },
       {
-        "text": "This is my banner ID B76543210",
         "intent": "give_banner",
         "entities": [
           {
@@ -88,10 +74,10 @@
             "value": "B76543210",
             "entity": "bannerid"
           }
-        ]
+        ],
+        "text": "This is my banner ID B76543210"
       },
       {
-        "text": "It is Q00112233",
         "intent": "give_banner",
         "entities": [
           {
@@ -100,10 +86,10 @@
             "value": "Q00112233",
             "entity": "bannerid"
           }
-        ]
+        ],
+        "text": "It is Q00112233"
       },
       {
-        "text": "My ID is W01237654",
         "intent": "give_banner",
         "entities": [
           {
@@ -112,10 +98,10 @@
             "value": "W01237654",
             "entity": "bannerid"
           }
-        ]
+        ],
+        "text": "My ID is W01237654"
       },
       {
-        "text": "it's B99125693",
         "intent": "give_banner",
         "entities": [
           {
@@ -124,10 +110,10 @@
             "value": "B99125693",
             "entity": "bannerid"
           }
-        ]
+        ],
+        "text": "it's B99125693"
       },
       {
-        "text": "The ID is b00001111",
         "intent": "give_banner",
         "entities": [
           {
@@ -136,10 +122,10 @@
             "value": "b00001111",
             "entity": "bannerid"
           }
-        ]
+        ],
+        "text": "The ID is b00001111"
       },
       {
-        "text": "B00008976",
         "intent": "give_banner",
         "entities": [
           {
@@ -148,10 +134,10 @@
             "value": "B00008976",
             "entity": "bannerid"
           }
-        ]
+        ],
+        "text": "B00008976"
       },
       {
-        "text": "Q12349876",
         "intent": "give_banner",
         "entities": [
           {
@@ -160,10 +146,10 @@
             "value": "Q12349876",
             "entity": "bannerid"
           }
-        ]
+        ],
+        "text": "Q12349876"
       },
       {
-        "text": "W12340987",
         "intent": "give_banner",
         "entities": [
           {
@@ -172,10 +158,10 @@
             "value": "W12340987",
             "entity": "bannerid"
           }
-        ]
+        ],
+        "text": "W12340987"
       },
       {
-        "text": "Here is my ID W55556666",
         "intent": "give_banner",
         "entities": [
           {
@@ -184,115 +170,94 @@
             "value": "W55556666",
             "entity": "bannerid"
           }
-        ]
+        ],
+        "text": "Here is my ID W55556666"
       },
       {
-        "text": "What is my name",
         "intent": "ask_name",
-        "entities": []
+        "text": "What is my name"
       },
       {
-        "text": "Who am I",
         "intent": "ask_name",
-        "entities": []
+        "text": "Who am I"
       },
       {
-        "text": "What's my name",
         "intent": "ask_name",
-        "entities": []
+        "text": "What's my name"
       },
       {
-        "text": "whats my name",
         "intent": "ask_name",
-        "entities": []
+        "text": "whats my name"
       },
       {
-        "text": "do you know my name",
         "intent": "ask_name",
-        "entities": []
+        "text": "do you know my name"
       },
       {
-        "text": "Hello Chai",
         "intent": "greet",
-        "entities": []
+        "text": "Hello Chai"
       },
       {
-        "text": "Hi there chatbot",
         "intent": "greet",
-        "entities": []
+        "text": "Hi there chatbot"
       },
       {
-        "text": "Sup chai",
         "intent": "greet",
-        "entities": []
+        "text": "Sup chai"
       },
       {
-        "text": "Good morning Chai",
         "intent": "greet",
-        "entities": []
+        "text": "Good morning Chai"
       },
       {
-        "text": "goodmoring chatbot",
         "intent": "greet",
-        "entities": []
+        "text": "goodmoring chatbot"
       },
       {
-        "text": "Good afternoon chai",
         "intent": "greet",
-        "entities": []
+        "text": "Good afternoon chai"
       },
       {
-        "text": "goodafternoon chatbot",
         "intent": "greet",
-        "entities": []
+        "text": "goodafternoon chatbot"
       },
       {
-        "text": "Good evening",
         "intent": "greet",
-        "entities": []
+        "text": "Good evening"
       },
       {
-        "text": "evening chatbot",
         "intent": "greet",
-        "entities": []
+        "text": "evening chatbot"
       },
       {
-        "text": "morning chatbot",
         "intent": "greet",
-        "entities": []
+        "text": "morning chatbot"
       },
       {
-        "text": "So long chatbot",
         "intent": "goodbye",
-        "entities": []
+        "text": "So long chatbot"
       },
       {
-        "text": "ttyl",
         "intent": "goodbye",
-        "entities": []
+        "text": "ttyl"
       },
       {
-        "text": "see you later",
         "intent": "goodbye",
-        "entities": []
+        "text": "see you later"
       },
       {
-        "text": "Afternoon",
         "intent": "greet",
-        "entities": []
+        "text": "Afternoon"
       },
       {
-        "text": "do you know what my name is?",
         "intent": "ask_name",
-        "entities": []
+        "text": "do you know what my name is?"
       },
       {
-        "text": "do you even know who I am",
         "intent": "ask_name",
-        "entities": []
+        "text": "do you even know who I am"
       },
       {
-        "text": "My banner ID is B12344321",
         "intent": "give_banner",
         "entities": [
           {
@@ -301,10 +266,10 @@
             "value": "B12344321",
             "entity": "bannerid"
           }
-        ]
+        ],
+        "text": "My banner ID is B12344321"
       },
       {
-        "text": "My ID is B00009999",
         "intent": "give_banner",
         "entities": [
           {
@@ -313,10 +278,10 @@
             "value": "B00009999",
             "entity": "bannerid"
           }
-        ]
+        ],
+        "text": "My ID is B00009999"
       },
       {
-        "text": "Sure my ID is B29382572",
         "intent": "give_banner",
         "entities": [
           {
@@ -325,125 +290,102 @@
             "value": "B29382572",
             "entity": "bannerid"
           }
-        ]
+        ],
+        "text": "Sure my ID is B29382572"
       },
       {
-        "text": "yes",
         "intent": "true_",
-        "entities": []
+        "text": "yes"
       },
       {
-        "text": "yup",
         "intent": "true_",
-        "entities": []
+        "text": "yup"
       },
       {
-        "text": "sure",
         "intent": "true_",
-        "entities": []
+        "text": "sure"
       },
       {
-        "text": "yuppers",
         "intent": "true_",
-        "entities": []
+        "text": "yuppers"
       },
       {
-        "text": "yessir",
         "intent": "true_",
-        "entities": []
+        "text": "yessir"
       },
       {
-        "text": "yeah ",
         "intent": "true_",
-        "entities": []
+        "text": "yeah "
       },
       {
-        "text": "yea",
         "intent": "true_",
-        "entities": []
+        "text": "yea"
       },
       {
-        "text": "I do",
         "intent": "true_",
-        "entities": []
+        "text": "I do"
       },
       {
-        "text": "no",
         "intent": "false_",
-        "entities": []
+        "text": "no"
       },
       {
-        "text": "nope",
         "intent": "false_",
-        "entities": []
+        "text": "nope"
       },
       {
-        "text": "no way",
         "intent": "false_",
-        "entities": []
+        "text": "no way"
       },
       {
-        "text": "nein",
         "intent": "false_",
-        "entities": []
+        "text": "nein"
       },
       {
-        "text": "iie",
         "intent": "false_",
-        "entities": []
+        "text": "iie"
       },
       {
-        "text": "no thank you",
         "intent": "false_",
-        "entities": []
+        "text": "no thank you"
       },
       {
-        "text": "yes please",
         "intent": "true_",
-        "entities": []
+        "text": "yes please"
       },
       {
-        "text": "From the system please",
         "intent": "system_name",
-        "entities": []
+        "text": "From the system please"
       },
       {
-        "text": "from the system",
         "intent": "system_name",
-        "entities": []
+        "text": "from the system"
       },
       {
-        "text": "system",
         "intent": "system_name",
-        "entities": []
+        "text": "system"
       },
       {
-        "text": "system name",
         "intent": "system_name",
-        "entities": []
+        "text": "system name"
       },
       {
-        "text": "from the chat",
         "intent": "chat_name",
-        "entities": []
+        "text": "from the chat"
       },
       {
-        "text": "chat name",
         "intent": "chat_name",
-        "entities": []
+        "text": "chat name"
       },
       {
-        "text": "chat",
         "intent": "chat_name",
-        "entities": []
+        "text": "chat"
       },
       {
-        "text": "my chat name please",
         "intent": "chat_name",
-        "entities": []
+        "text": "my chat name please"
       },
       {
-        "text": "Its B44567923",
         "intent": "give_banner",
         "entities": [
           {
@@ -452,18 +394,19 @@
             "value": "B44567923",
             "entity": "bannerid"
           }
-        ]
+        ],
+        "text": "Its B44567923"
       },
       {
-        "text": "system name again",
         "intent": "system_name",
-        "entities": []
+        "text": "system name again"
       },
       {
-        "text": "yo",
         "intent": "greet",
-        "entities": []
+        "text": "yo"
       }
-    ]
+    ],
+    "regex_features": [],
+    "entity_synonyms": []
   }
 }

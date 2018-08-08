@@ -20,8 +20,16 @@ While this demo is being written from the perspective of developing on Windows 1
 7. Then run the following command to get the simple intent creation page  
     `npm install rasa-nlu-trainer`  
 
-That is it (as far as installation is concerned that is). Continue on to see how we will use thse
+That is it (as far as installation is concerned that is). Continue on to see how we will use this. 
 
 ## Training the Rasa NLU
 The first thing to do when going to train the NLU is to load up some data into data/data.json. The quickest way to do this is using the rasa nlu trainer we insalled in step 7 of the last section. You do this by running the following line from the command line.  
     `rasa-nlu-trainer`  
+
+Next you will want to train the nlu model on your custom intents. To do so from the command line you will need to run `python train_nlu.py` which will train the NLU to recognize the intents and any entities that are associated. This will persist in /models/nlu/default/nlu.
+
+## Pipeline for the BOT (todo: Expand on steps)
+1. Install the required depenencies
+2. Training the Rasa NLU
+3. Training the core with the dialogue stories (run `python train_rasa_core.py`)
+4. At this point you can either load the bot into slack with slack_handler.py or train further using train_rasa_terminal.py

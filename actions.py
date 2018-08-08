@@ -7,7 +7,7 @@ from rasa_core.events import SlotSet
 import requests
 import json
 
-# This is a custom action for the Chatbot
+# These are custom actions for the Chatbot
 # It accepts an action from RASA.Core
 class ActionBanner(Action):
   def name(self):

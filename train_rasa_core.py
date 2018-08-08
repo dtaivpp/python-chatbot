@@ -24,24 +24,30 @@ if __name__ == '__main__':
   featurizer = MaxHistoryTrackerFeaturizer(BinarySingleStateFeaturizer(), max_history=5)
 
   # Domain and Policies needed
-  agent = Agent('student_info_domain.yml', policies=[MemoizationPolicy(max_history=5),
+  agent = Agent('./data/student_info_domain.yml', policies=[MemoizationPolicy(max_history=5),
                                                      KerasPolicy(featurizer)])
 	
   training_data = agent.load_data(training_data_file)
 
-  # Augmentation Factor - Fake stories created
-  # Epochs - number of forwards and backwards training passes
-  # Batch Size - How many entries it should use in each pass
-  # Validation Split
+    
+  # Training data is the training data object created in the above line
+  # input_channel - How the trainer recieves its input
+  # epochs - Number of training passes
+  # batch_size - How many times the model is updated per pass
+  # validation_split - Fraction of the training data to be used as validation data 
+  # augmentation_factor - How many of the dialogue stories are randomly glued together
+      # the more stories you have the higher the augmentation factor you want
   agent.train(
     training_data,
     augmentation_factor = 50,
-    epochs = 500,
+    epochs = 400,
     batch_size = 10,
     validation_split = 0.2)
 	
+  # Logging for time spent training
   end = datetime.now()
   final = end - start
-  print(final)
+  print("Time to train: " + str(final))
+  
   # Save Model
   agent.persist(model_path)

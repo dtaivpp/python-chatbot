@@ -1,9 +1,9 @@
 from rasa_nlu.model import Metadata, Interpreter
 
-# Quick test to run the model
+# Quick way to test if the output is the expected output programattically
 def run_nlu ():
   # Rasa NLU interpereter to read the model
-  interpreter = Interpreter.load('./models/nlu/default/nlu')
+  interpreter = Interpreter.load('../models/nlu/default/nlu')
   
   #Print the results of the test case
   print(interpreter.parse(u"Id B04010203"))

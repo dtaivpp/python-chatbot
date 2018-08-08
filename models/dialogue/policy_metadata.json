@@ -2,18 +2,10 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "chat_name",
         "bannerid",
+        "chat_name",
         "system_name"
       ]
-    },
-    "action_chat_name": {
-      "slots": [
-        "chat_name"
-      ]
-    },
-    "utter_chat_name": {
-      "slots": []
     },
     "action_get_name": {
       "slots": [
@@ -23,10 +15,18 @@
     "utter_system_name": {
       "slots": []
     },
-    "utter_goodbye": {
+    "action_chat_name": {
+      "slots": [
+        "chat_name"
+      ]
+    },
+    "utter_chat_name": {
       "slots": []
     },
     "utter_greet": {
+      "slots": []
+    },
+    "utter_goodbye": {
       "slots": []
     }
   },

@@ -1,3 +1,5 @@
+# Here we are demonstrating using the chatbot with a websocket 
+# that returns data using transit for the data encoding
 
 from dialogue_management_model import run_student_bot
 import websocket

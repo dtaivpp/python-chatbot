@@ -46,16 +46,20 @@ templates:
   utter_ask_bannerid:
   - text: I can get your name. What is your Banner ID?
   - text: I can tell you your name if you give me your Banner ID
+  - text: Sure what is your Banner ID
   utter_chat_name:
   - text: Your Chat name is {chat_name}
+  - text: Your name in the chat is {chat_name}
   utter_clarify_name:
   - text: Would you like your name from our systems or the chat?
   utter_goodbye:
   - text: Talk to you Later
+  - text: So long
   - text: Bye bye :(
   utter_greet:
   - text: Hello how can I help?
   - text: Hey there, how can I be of assistance
   utter_system_name:
   - text: Your System name is {system_name}
+  - text: Your name in our system is {system_name}
 topics: []

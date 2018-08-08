@@ -18,9 +18,9 @@ logger = logging.getLogger(__name__)
 
 # This is used to train the RASA core on your dialogue model
 # and branching statements. It is a CLI trainer
-def run_student_online(input_channel, interpreter,
-                          domain_file="student_info_domain.yml",
-                          training_data_file='data/stories.md'):
+def run_bot_cli(input_channel, interpreter,
+                          domain_file="./data/student_info_domain.yml",
+                          training_data_file='./data/stories.md'):
 
   # Featureizer Generation
   featurizer = MaxHistoryTrackerFeaturizer(BinarySingleStateFeaturizer(), max_history=5)
@@ -35,13 +35,19 @@ def run_student_online(input_channel, interpreter,
   training_data = agent.load_data(training_data_file)
   
   # Training data is the training data object created in the above line
-  # 
-  # Epochs are the number of runs the bot does
+  # input_channel - How the trainer recieves its input
+  # batch_size - How many times the model is updated per pass
+  # epochs - Number of training passes
+  # validation_split - Fraction of the training data to be used as validation data 
+  # augmentation_factor - How many of the dialogue stories are randomly glued together
+      # the more stories you have the higher the augmentation factor you want
   agent.train_online(training_data,
                       input_channel=input_channel,
-                      batch_size=50,
+                      batch_size=35,
                       epochs=400,
-                      max_training_samples=300)
+                      max_training_samples=300,
+                      validation_split = 0.2,
+                      augmentation_factor = 10)
 
   return agent
 
@@ -49,4 +55,4 @@ def run_student_online(input_channel, interpreter,
 if __name__ == '__main__':
   logging.basicConfig(level="INFO")
   nlu_interpreter = RasaNLUInterpreter('./models/nlu/default/nlu')
-  run_student_online(ConsoleInputChannel(), nlu_interpreter)
+  run_bot_cli(ConsoleInputChannel(), nlu_interpreter)

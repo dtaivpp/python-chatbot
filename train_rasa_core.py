@@ -39,10 +39,11 @@ if __name__ == '__main__':
       # the more stories you have the higher the augmentation factor you want
   agent.train(
     training_data,
-    augmentation_factor = 50,
-    epochs = 400,
-    batch_size = 10,
-    validation_split = 0.2)
+    batch_size=35,
+    epochs=400,
+    max_training_samples=300,
+    validation_split = 0.2,
+    augmentation_factor = 10)
 	
   # Logging for time spent training
   end = datetime.now()

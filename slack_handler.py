@@ -2,12 +2,12 @@ from rasa_core.channels import HttpInputChannel
 from rasa_core.channels.slack import SlackInput
 from rasa_core.agent import Agent
 from rasa_core.interpreter import RegexInterpreter
-from dialogue_management_model import run_student_bot
+from load_bot import run_bot
 import json
 
 def run_slack_bot():
   # load your trained agent
-  agent = run_student_bot()
+  agent = run_bot()
   filename = "slack_creds.json"
 
   #Read JSON data into the datastore variable

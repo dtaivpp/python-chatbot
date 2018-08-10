@@ -2,18 +2,10 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
-        "bannerid",
         "chat_name",
-        "system_name"
+        "system_name",
+        "bannerid"
       ]
-    },
-    "action_get_name": {
-      "slots": [
-        "system_name"
-      ]
-    },
-    "utter_system_name": {
-      "slots": []
     },
     "action_chat_name": {
       "slots": [
@@ -21,6 +13,14 @@
       ]
     },
     "utter_chat_name": {
+      "slots": []
+    },
+    "action_get_name": {
+      "slots": [
+        "system_name"
+      ]
+    },
+    "utter_system_name": {
       "slots": []
     },
     "utter_greet": {

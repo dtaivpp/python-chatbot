@@ -6,5 +6,6 @@ RUN python -m spacy download en_core_web_sm
 RUN pip install pip==9.0.3
 RUN python -m spacy link en_core_web_sm en -f
 COPY . .
+EXPOSE 5000
 EXPOSE 5004
-CMD [ "python", "./slack_handler.py" ]
+CMD . ./init.sh

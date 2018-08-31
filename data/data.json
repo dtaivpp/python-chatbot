@@ -463,6 +463,11 @@
         "text": "yo",
         "intent": "greet",
         "entities": []
+      },
+      {
+        "text": "Hello Agustin",
+        "intent": "greet",
+        "entities": []
       }
     ]
   }

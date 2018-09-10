@@ -45,9 +45,9 @@ def run_bot_cli(input_channel, interpreter,
                       input_channel=input_channel,
                       batch_size=35,
                       epochs=400,
-                      max_training_samples=300,
+                      max_training_samples=200,
                       validation_split = 0.2,
-                      augmentation_factor = 10)
+                      augmentation_factor = 20)
 
   return agent
 

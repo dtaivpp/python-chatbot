@@ -1,6 +1,9 @@
 {
   "states": [
     "intent_greet",
+    "intent_greet_morning",
+    "intent_greet_afternoon",
+    "intent_greet_evening",
     "intent_goodbye",
     "intent_give_banner",
     "intent_true_",
@@ -17,6 +20,9 @@
     "prev_action_listen",
     "prev_action_restart",
     "prev_utter_greet",
+    "prev_utter_greet_morning",
+    "prev_utter_greet_evening",
+    "prev_utter_greet_afternoon",
     "prev_utter_goodbye",
     "prev_utter_ask_bannerid",
     "prev_utter_clarify_name",

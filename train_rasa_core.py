@@ -40,8 +40,8 @@ if __name__ == '__main__':
   agent.train(
     training_data,
     batch_size=35,
-    epochs=400,
-    max_training_samples=300,
+    epochs=200,
+    max_training_samples=50,
     validation_split = 0.2,
     augmentation_factor = 10)
 	

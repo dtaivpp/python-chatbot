@@ -2,18 +2,10 @@
   "action_fingerprints": {
     "action_listen": {
       "slots": [
+        "bannerid",
         "chat_name",
-        "system_name",
-        "bannerid"
+        "system_name"
       ]
-    },
-    "action_chat_name": {
-      "slots": [
-        "chat_name"
-      ]
-    },
-    "utter_chat_name": {
-      "slots": []
     },
     "action_get_name": {
       "slots": [
@@ -23,7 +15,24 @@
     "utter_system_name": {
       "slots": []
     },
+    "action_chat_name": {
+      "slots": [
+        "chat_name"
+      ]
+    },
+    "utter_chat_name": {
+      "slots": []
+    },
+    "utter_greet_evening": {
+      "slots": []
+    },
+    "utter_greet_morning": {
+      "slots": []
+    },
     "utter_greet": {
+      "slots": []
+    },
+    "utter_greet_afternoon": {
       "slots": []
     },
     "utter_goodbye": {

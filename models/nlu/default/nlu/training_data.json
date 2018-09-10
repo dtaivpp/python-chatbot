@@ -195,42 +195,42 @@
       },
       {
         "intent": "greet",
-        "text": "Hello Chai"
+        "text": "Hello"
       },
       {
         "intent": "greet",
-        "text": "Hi there chatbot"
+        "text": "Hi there agustin"
       },
       {
         "intent": "greet",
-        "text": "Sup chai"
+        "text": "Sup augustin"
       },
       {
-        "intent": "greet",
-        "text": "Good morning Chai"
+        "intent": "greet_morning",
+        "text": "Good morning Augustine "
       },
       {
-        "intent": "greet",
+        "intent": "greet_morning",
         "text": "goodmoring chatbot"
       },
       {
-        "intent": "greet",
-        "text": "Good afternoon chai"
+        "intent": "greet_afternoon",
+        "text": "Good afternoon augustin"
       },
       {
-        "intent": "greet",
+        "intent": "greet_afternoon",
         "text": "goodafternoon chatbot"
       },
       {
-        "intent": "greet",
+        "intent": "greet_evening",
         "text": "Good evening"
       },
       {
-        "intent": "greet",
+        "intent": "greet_evening",
         "text": "evening chatbot"
       },
       {
-        "intent": "greet",
+        "intent": "greet_morning",
         "text": "morning chatbot"
       },
       {
@@ -246,7 +246,7 @@
         "text": "see you later"
       },
       {
-        "intent": "greet",
+        "intent": "greet_afternoon",
         "text": "Afternoon"
       },
       {
@@ -404,6 +404,66 @@
       {
         "intent": "greet",
         "text": "yo"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello Agustin"
+      },
+      {
+        "intent": "greet",
+        "text": "Hello Augustin"
+      },
+      {
+        "intent": "greet",
+        "text": "Agustin"
+      },
+      {
+        "intent": "greet",
+        "text": "Augustin"
+      },
+      {
+        "intent": "greet_morning",
+        "text": "morning augustin"
+      },
+      {
+        "intent": "greet_morning",
+        "text": "goodmorning augustin"
+      },
+      {
+        "intent": "greet_morning",
+        "text": "good morning agustin"
+      },
+      {
+        "intent": "greet_morning",
+        "text": "goodmorning"
+      },
+      {
+        "intent": "greet_morning",
+        "text": "morning!"
+      },
+      {
+        "intent": "greet_afternoon",
+        "text": "afternoon augustin"
+      },
+      {
+        "intent": "greet_afternoon",
+        "text": "good afternoon augustin"
+      },
+      {
+        "intent": "greet_evening",
+        "text": "good evening"
+      },
+      {
+        "intent": "greet_evening",
+        "text": "good evening augustin"
+      },
+      {
+        "intent": "greet_evening",
+        "text": "evening augustin"
+      },
+      {
+        "intent": "greet_evening",
+        "text": "evening"
       }
     ],
     "regex_features": [],

@@ -78,9 +78,41 @@
 * system_name
     - utter_system_name
 
+## Generated Story -2935573863199164787
+* greet_morning
+    - utter_greet_morning
+* ask_name
+    - utter_clarify_name
+* system_name
+    - utter_ask_bannerid
+* give_banner{"bannerid": "b01239876"}
+    - slot{"bannerid": "b01239876"}
+    - action_get_name
+    - slot{"system_name": "Jeff"}
+* ask_name
+    - utter_clarify_name
+* system_name
+    - utter_system_name
+
 ## Generated Story -2935573863699164234
 * greet
     - utter_greet
+* ask_name
+    - utter_clarify_name
+* system_name
+    - utter_ask_bannerid
+* give_banner{"bannerid": "b55578230"}
+    - slot{"bannerid": "b55578230"}
+    - action_get_name
+    - slot{"system_name": "Jeff"}
+* ask_name
+    - utter_clarify_name
+* system_name
+    - utter_system_name
+
+## Generated Story -2935573863699164234
+* greet_afternoon
+    - utter_greet_afternoon
 * ask_name
     - utter_clarify_name
 * system_name
@@ -125,6 +157,22 @@
     - utter_system_name
 
 ## Generated Story -2935573863199164787
+* greet_evening
+    - utter_greet_evening
+* ask_name
+    - utter_clarify_name
+* system_name
+    - utter_ask_bannerid
+* give_banner{"bannerid": "b01239876"}
+    - slot{"bannerid": "b01239876"}
+    - action_get_name
+    - slot{"system_name": "Jeff"}
+* ask_name
+    - utter_clarify_name
+* system_name
+    - utter_system_name
+
+## Generated Story -2935573863199164787
 * greet
     - utter_greet
 * ask_name
@@ -200,3 +248,21 @@
 * chat_name
     - action_chat_name
     - slot{"chat_name": "Steve"}
+
+## Generated Story -823419217332630580
+* greet_morning
+    - utter_greet_morning
+* goodbye
+    - utter_goodbye
+
+## Generated Story -823419217332630580
+* greet_afternoon
+    - utter_greet_afternoon
+* goodbye
+    - utter_goodbye
+
+## Generated Story -823419217332630580
+* greet_evening
+    - utter_greet_evening
+* goodbye
+    - utter_goodbye

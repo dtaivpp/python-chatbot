@@ -1,6 +1,9 @@
 action_factory: null
 action_names:
 - utter_greet
+- utter_greet_morning
+- utter_greet_evening
+- utter_greet_afternoon
 - utter_goodbye
 - utter_ask_bannerid
 - utter_clarify_name
@@ -10,6 +13,9 @@ action_names:
 - action_chat_name
 actions:
 - utter_greet
+- utter_greet_morning
+- utter_greet_evening
+- utter_greet_afternoon
 - utter_goodbye
 - utter_ask_bannerid
 - utter_clarify_name
@@ -25,6 +31,9 @@ entities:
 - chat_name
 intents:
 - greet
+- greet_morning
+- greet_afternoon
+- greet_evening
 - goodbye
 - give_banner
 - true_
@@ -59,6 +68,15 @@ templates:
   utter_greet:
   - text: Hello how can I help?
   - text: Hey there, how can I be of assistance
+  utter_greet_afternoon:
+  - text: Afternoon, how can I help you today?
+  - text: Good afternoon how can I be of assistance?
+  utter_greet_evening:
+  - text: Good evening, how can I help you today?
+  - text: Good evening how can I be of assistance?
+  utter_greet_morning:
+  - text: Good morning how can I be of assistance?
+  - text: Morning, how can I help you today?
   utter_system_name:
   - text: Your System name is {system_name}
   - text: Your name in our system is {system_name}

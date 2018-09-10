@@ -40,10 +40,10 @@ if __name__ == '__main__':
   agent.train(
     training_data,
     batch_size=35,
-    epochs=200,
-    max_training_samples=50,
+    epochs=400,
+    max_training_samples=200,
     validation_split = 0.2,
-    augmentation_factor = 10)
+    augmentation_factor = 20)
 	
   # Logging for time spent training
   end = datetime.now()

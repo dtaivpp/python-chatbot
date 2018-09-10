@@ -26,6 +26,9 @@
     "utter_greet_evening": {
       "slots": []
     },
+    "utter_goodbye": {
+      "slots": []
+    },
     "utter_greet_morning": {
       "slots": []
     },
@@ -33,9 +36,6 @@
       "slots": []
     },
     "utter_greet_afternoon": {
-      "slots": []
-    },
-    "utter_goodbye": {
       "slots": []
     }
   },

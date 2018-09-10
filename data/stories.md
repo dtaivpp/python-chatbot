@@ -3,6 +3,18 @@
   - utter_greet
 
 ## story 02
+* greet_morning
+  - utter_greet_morning
+
+## story 03
+* greet_evening
+  - utter_greet_evening
+
+## story 04
+* greet_afternoon
+  - utter_greet_afternoon
+
+## story 05
 * goodbye
   - utter_goodbye
 

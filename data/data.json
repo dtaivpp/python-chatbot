@@ -212,53 +212,53 @@
         "entities": []
       },
       {
-        "text": "Hello Chai",
+        "text": "Hello",
         "intent": "greet",
         "entities": []
       },
       {
-        "text": "Hi there chatbot",
+        "text": "Hi there agustin",
         "intent": "greet",
         "entities": []
       },
       {
-        "text": "Sup chai",
+        "text": "Sup augustin",
         "intent": "greet",
         "entities": []
       },
       {
-        "text": "Good morning Chai",
-        "intent": "greet",
+        "text": "Good morning Augustine ",
+        "intent": "greet_morning",
         "entities": []
       },
       {
         "text": "goodmoring chatbot",
-        "intent": "greet",
+        "intent": "greet_morning",
         "entities": []
       },
       {
-        "text": "Good afternoon chai",
-        "intent": "greet",
+        "text": "Good afternoon augustin",
+        "intent": "greet_afternoon",
         "entities": []
       },
       {
         "text": "goodafternoon chatbot",
-        "intent": "greet",
+        "intent": "greet_afternoon",
         "entities": []
       },
       {
         "text": "Good evening",
-        "intent": "greet",
+        "intent": "greet_evening",
         "entities": []
       },
       {
         "text": "evening chatbot",
-        "intent": "greet",
+        "intent": "greet_evening",
         "entities": []
       },
       {
         "text": "morning chatbot",
-        "intent": "greet",
+        "intent": "greet_morning",
         "entities": []
       },
       {
@@ -278,7 +278,7 @@
       },
       {
         "text": "Afternoon",
-        "intent": "greet",
+        "intent": "greet_afternoon",
         "entities": []
       },
       {
@@ -467,6 +467,76 @@
       {
         "text": "Hello Agustin",
         "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Hello Augustin",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Agustin",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "Augustin",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "morning augustin",
+        "intent": "greet_morning",
+        "entities": []
+      },
+      {
+        "text": "goodmorning augustin",
+        "intent": "greet_morning",
+        "entities": []
+      },
+      {
+        "text": "good morning agustin",
+        "intent": "greet_morning",
+        "entities": []
+      },
+      {
+        "text": "goodmorning",
+        "intent": "greet_morning",
+        "entities": []
+      },
+      {
+        "text": "morning!",
+        "intent": "greet_morning",
+        "entities": []
+      },
+      {
+        "text": "afternoon augustin",
+        "intent": "greet_afternoon",
+        "entities": []
+      },
+      {
+        "text": "good afternoon augustin",
+        "intent": "greet_afternoon",
+        "entities": []
+      },
+      {
+        "text": "good evening",
+        "intent": "greet_evening",
+        "entities": []
+      },
+      {
+        "text": "good evening augustin",
+        "intent": "greet_evening",
+        "entities": []
+      },
+      {
+        "text": "evening augustin",
+        "intent": "greet_evening",
+        "entities": []
+      },
+      {
+        "text": "evening",
+        "intent": "greet_evening",
         "entities": []
       }
     ]

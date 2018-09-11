@@ -538,6 +538,101 @@
         "text": "evening",
         "intent": "greet_evening",
         "entities": []
+      },
+      {
+        "text": "id like to start an application",
+        "intent": "start_application",
+        "entities": []
+      },
+      {
+        "text": "Can I begin an app?",
+        "intent": "start_application",
+        "entities": []
+      },
+      {
+        "text": "start app",
+        "intent": "start_application",
+        "entities": []
+      },
+      {
+        "text": "can I start an application",
+        "intent": "start_application",
+        "entities": []
+      },
+      {
+        "text": "how do I apply",
+        "intent": "start_application",
+        "entities": []
+      },
+      {
+        "text": "can you app me?",
+        "intent": "start_application",
+        "entities": []
+      },
+      {
+        "text": "begin application",
+        "intent": "start_application",
+        "entities": []
+      },
+      {
+        "text": "my first name is David",
+        "intent": "give_f_name",
+        "entities": [
+          {
+            "start": 17,
+            "end": 22,
+            "value": "David",
+            "entity": "f_name"
+          }
+        ]
+      },
+      {
+        "text": "Stacey",
+        "intent": "give_f_name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Stacey",
+            "entity": "f_name"
+          }
+        ]
+      },
+      {
+        "text": "Jeronda",
+        "intent": "give_f_name",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Jeronda",
+            "entity": "f_name"
+          }
+        ]
+      },
+      {
+        "text": "its Steven",
+        "intent": "give_f_name",
+        "entities": [
+          {
+            "start": 4,
+            "end": 10,
+            "value": "Steven",
+            "entity": "f_name"
+          }
+        ]
+      },
+      {
+        "text": "my name is Olufemi",
+        "intent": "give_f_name",
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "Olufemi",
+            "entity": "f_name"
+          }
+        ]
       }
     ]
   }

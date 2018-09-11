@@ -20,6 +20,4 @@
     - utter_greet_morning
 * goodbye
     - utter_goodbye
-* 
-    - export
 
